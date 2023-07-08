@@ -128,7 +128,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (valid) {
-        window.location.replace('login.html');
+        //redirect to login
     }
 });
 
