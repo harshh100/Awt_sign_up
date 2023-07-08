@@ -6,14 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign_up</title>
     <style>
+        body {
+            background-color: #EEEEEE;
+        }
+
+        .root {
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            width: fit-content;
+            margin: 40px auto;
+        }
+
+        .submit_btn {
+            height: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
         .inp_itm {
             margin: 20px;
         }
 
-        .form_part {
-            width: fit-content;
-            margin: 10px auto;
+        .f_inp {
+            float: right;
         }
+
+        /* .form_part {
+            margin: 10px auto;
+        } */
 
         .headingpart {
             width: fit-content;
@@ -27,53 +49,68 @@
         .gen {
             display: flex;
             align-items: center;
-            margin-top: -21px;
-            margin-bottom: -21px;
+
         }
 
         .submit_btn {
             width: -webkit-fill-available;
+        }
+
+        .gender_b {
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            margin-top: 145px;
         }
     </style>
 </head>
 
 <body>
     <div class="root">
-        <div class="headingpart">
-            <h1>Sign_up</h1>
+        <div>
+            <div class="headingpart">
+                <h1>Sign_up</h1>
+            </div>
+            <center>
+                <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+            </center>
         </div>
         <div class="form_part">
             <form>
                 <div class="inp_itm">
-                    <label for="Username">Username : </label>
-                    <input id="Username" name="Username" placeholder="Enter Username" type="text">
+                    <label for="Username" class="itm_label">Username : </label>
+                    <input class="f_inp" id="Username" name="Username" placeholder="Enter Username" type="text">
                 </div>
                 <div class="inp_itm">
-                    <label for="Fullname">Fullname : </label>
-                    <input id="Fullname" name="Fullname" placeholder="Enter Fullname" type="text">
+                    <label for="Fullname" class="itm_label">Fullname : </label>
+                    <input class="f_inp" id="Fullname" name="Fullname" placeholder="Enter Fullname" type="text">
                 </div>
                 <div class="inp_itm">
-                    <label for="Password">Password : </label>
-                    <input id="Password" name="Password" placeholder="Enter Password" type="password">
+                    <label for="Password" class="itm_label">Password : </label>
+                    <input class="f_inp" id="Password" name="Password" placeholder="Enter Password" type="password">
                 </div>
                 <div class="inp_itm">
-                    <label for="Confirm_Password">Confirm Password : </label>
-                    <input id="Confirm_Password" name="Confirm_Password" placeholder="Enter Confirm Password"
-                        type="password">
+                    <label for="Confirm_Password" class="itm_label">Confirm Password : </label>
+                    <input class="f_inp" id="Confirm_Password" name="Confirm_Password"
+                        placeholder="Enter Confirm Password" type="password">
                 </div>
                 <div class="inp_itm">
-                    <label for="Phone_No">Phone No : </label>
-                    <input id="Phone_No" name="Phone_No" placeholder="Enter Phone No" type="text">
+                    <label for="Phone_No" class="itm_label">Phone No : </label>
+                    <input class="f_inp" id="Phone_No" name="Phone_No" placeholder="Enter Phone No" type="text">
                 </div>
                 <div class="inp_itm">
-                    <label for="Email">Email : </label>
-                    <input id="Email" name="Email" placeholder="Enter Email" type="text">
+                    <label for="Email" class="itm_label">Email : </label>
+                    <input class="f_inp" id="Email" name="Email" placeholder="Enter Email" type="text">
                 </div>
 
                 <div class="inp_itm">
-                    <span>State : </span>
-                    <select name="State" id="State">
-                        <option value="">- - - Select Your State - - -</Source>
+                    <span class="itm_label">State : </span>
+                    <select class="f_inp" name="State" id="State">
+                        <option value="">---- Select Your State ----</Source>
                         </option>
                         <option value="Andhra_Pradesh">Andhra Pradesh</option>
                         <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
@@ -105,12 +142,18 @@
                         <option value="West_Bengal">West Bengal</option>
                     </select>
                 </div>
-                <div class="inp_itm gen">
-                    <p>Gender : </p>
-                    <input class="gen" type="radio" id="male" name="Gender" value="male">
-                    <label for="male">Male</label><br>
-                    <input class="gen" type="radio" id="female" name="Gender" value="female">
-                    <label for="female">Female</label><br>
+                <div class="inp_itm gender_b">
+                    <div class="gen">
+                        <p>Gender : </p>
+                        <div style="margin-left: 66px">
+                            <div class="gen">
+                                <input type="radio" id="male" name="Gender" value="male">
+                                <label for="male">Male</label><br>
+                                <input type="radio" id="female" name="Gender" value="female">
+                                <label for="female">Female</label><br>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="inp_itm">
                     <input type="checkbox" id="Agreement" name="Agreement" value="Agreement">
@@ -124,6 +167,11 @@
             </form>
         </div>
     </div>
+    <footer>
+        <center>
+            <p>created By Harsh Patel 😎</p>
+        </center>
+    </footer>
 </body>
 <script src="sign_up.js"></script>
 
