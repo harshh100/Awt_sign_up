@@ -8,7 +8,7 @@ const Email = document.getElementById("Email");
 const State = document.getElementById("State");
 const Gender = document.getElementsByName("Gender");
 const Agreement = document.getElementById("Agreement");
-console.log(Phone_No.value);
+
 form.addEventListener("submit", (e) => {
     let valid = true;
     if (Username.value === "") {
