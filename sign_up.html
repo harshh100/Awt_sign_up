@@ -5,39 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign_up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #EEEEEE;
         }
 
         .root {
+            min-width: 38%;
             background-color: white;
             padding: 10px;
             border-radius: 15px;
             width: fit-content;
             margin: 40px auto;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
         }
 
         .submit_btn {
-            height: 30px;
+            /* height: 30px; */
             background-color: black;
             color: white;
             border-radius: 5px;
+            padding: 14px 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border: 2px dashed black;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            transition: .4s;
+
+
         }
 
+        .btn {
+            /* background-color: #00BFA6; */
+            /* color: #fff; */
+            border-radius: 10px;
+
+        }
+
+        .submit_btn span:last-child {
+            display: none;
+        }
+
+        .submit_btn:hover {
+            transition: .4s;
+            border: 2px dashed black;
+            background-color: #fff;
+            color: black;
+        }
+
+        .submit_btn:active {
+            background-color: #808484;
+        }
+
+
+
         .inp_itm {
-            margin: 20px;
+            margin: 30px;
         }
 
         .f_inp {
+            min-width: 48%;
             float: right;
+            height: 25px;
+            /* text-transform: uppercase; */
+            font-family: 'Cuprum', serif;
+            letter-spacing: 2px;
         }
 
-        /* .form_part {
-            margin: 10px auto;
-        } */
+        .form_part {
+            /* margin: 10px auto; */
+            font-size: 20px;
+            font-family: 'Cuprum', serif;
+        }
 
         .headingpart {
+            font-family: 'Cinzel', serif;
             width: fit-content;
             margin: 10px auto;
         }
@@ -49,11 +98,11 @@
         .gen {
             display: flex;
             align-items: center;
-
         }
 
         .submit_btn {
             width: -webkit-fill-available;
+            font-family: 'Cuprum', serif;
         }
 
         .gender_b {
@@ -110,7 +159,7 @@
                 <div class="inp_itm">
                     <span class="itm_label">State : </span>
                     <select class="f_inp" name="State" id="State">
-                        <option value="">---- Select Your State ----</Source>
+                        <option value="">Select Your State</Source>
                         </option>
                         <option value="Andhra_Pradesh">Andhra Pradesh</option>
                         <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
